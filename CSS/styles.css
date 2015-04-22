@@ -1,0 +1,14 @@
+body{
+	background: #5882FA;
+}
+
+#login{
+	text-align: center;
+}
+
+div{
+	align-items: center;
+	 width: 900px;
+     margin: auto;
+     padding: 10px;
+}
