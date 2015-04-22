@@ -1,6 +1,6 @@
 <?php
 
-
+require "NEO/Money.php";
 
 class MoneyTest extends PHPUnit_Framework_TestCase
 {
