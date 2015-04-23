@@ -1,5 +1,7 @@
 <?php
 
+namespace NEO;
+
     class Money{
 
         private $amount;
