@@ -1,7 +1,8 @@
 {
   "autoload":{
     "psr-0":{
-      "NEO":"projectNEO/"
+      "NEO":"projectNEO/",
+      "test":"projectNEO/"
     }
   },
   "require-dev":{
