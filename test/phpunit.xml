@@ -29,7 +29,7 @@
     <phpunit bootstrap="NEO/autoload.php">
         <testsuites>
             <testsuite name="money">
-                <directory>test</directory>
+                <file>test/MoneyTest.php</file>
             </testsuite>
         </testsuites>
     </phpunit>
