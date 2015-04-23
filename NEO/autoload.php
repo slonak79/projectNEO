@@ -1,7 +1,7 @@
 
 <?php
 function __autoload($Money) {
-    include 'NEO/'.$Money . '.php';
+    include $Money . '.php';
 }
 
 //$obj  = new Money(5);
