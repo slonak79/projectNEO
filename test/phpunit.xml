@@ -24,12 +24,12 @@
         timeoutForSmallTests="1"
         timeoutForMediumTests="10"
         timeoutForLargeTests="60"
-        verbose="true">
+        verbose="false">
 
     <phpunit bootstrap="NEO/autoload.php">
         <testsuites>
             <testsuite name="money">
-                <directory>tests</directory>
+                <directory>test</directory>
             </testsuite>
         </testsuites>
     </phpunit>
