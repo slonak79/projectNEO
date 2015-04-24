@@ -8,7 +8,7 @@ before_isntall:
 before_script:
   - composer install
 
-script: phpunit phpunit.xml --coverage-text
+script: phpunit.xml --coverage-text
 
 notifications:
   email:
