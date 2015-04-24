@@ -13,7 +13,7 @@
 
         <testsuites>
             <testsuite name="money test">
-                <directory>./projectNEO/test/</directory>
+                <directory suffix="MoneyTest.php">./projectNEO/test/</directory>
             </testsuite>
         </testsuites>
     </phpunit>
