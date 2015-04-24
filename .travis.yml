@@ -12,7 +12,7 @@ before_script:
 before_script: wget https://phar.phpunit.de/phpunit.phar
 
 
-script: php phpunit.phar -c phpunit.xml
+script: php --configuration phpunit.xml
 
 
 
