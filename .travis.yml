@@ -16,9 +16,6 @@ before_script:
     - phpunit
 
 
-script: php --configuration phpunit.xml
-
-
 
 notifications:
   email:
