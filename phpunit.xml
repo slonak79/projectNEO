@@ -13,7 +13,7 @@
 
         <testsuites>
             <testsuite name="money test">
-                <directory>./test/</directory>
+                <directory>./projectNEO/test/</directory>
             </testsuite>
         </testsuites>
     </phpunit>
