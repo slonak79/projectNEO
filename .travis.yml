@@ -9,7 +9,11 @@ php:
 before_script:
   - composer install
 
-before_script: wget https://phar.phpunit.de/phpunit.phar
+before_script:
+    - wget https://phar.phpunit.de/phpunit.phar
+    - wget http://getcomposer.org/composer.phar
+    - php composer.phar install
+    - phpunit
 
 
 script: php --configuration phpunit.xml
