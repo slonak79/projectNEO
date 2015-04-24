@@ -4,18 +4,12 @@ php:
   - "5.5"
   - "5.6"
 
-
-
 before_script:
-  - composer install
-
-before_script:
+    - composer install
     - wget https://phar.phpunit.de/phpunit.phar
     - wget http://getcomposer.org/composer.phar
     - php composer.phar install
     - phpunit
-
-
 
 notifications:
   email:
