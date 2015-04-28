@@ -1,11 +1,13 @@
 <?php
 
-
+require_once __DIR__ . '/vendor/autoload.php';
 
 class MoneyTest extends PHPUnit_Framework_TestCase
 {
     // ...
-
+    /**
+ * @test
+ */
     public function testCanBeNegated()
     {
         // Arrange

@@ -1,0 +1,19 @@
+{
+  "name": "project NEO",
+  "description": "Top Secret",
+  "license": "CSUMB",
+  "authors": [
+    {
+      "name": "Alcides Sorto",
+      "email": "asorto@csumb.edu"
+    }
+  ],
+  "autoload":{
+    "psr-0":{
+      "NEO":"projectNEO/"
+    }
+  },
+  "require-dev":{
+    "phpunit/phpunit":"4.6.*"
+  }
+}
