@@ -63,9 +63,6 @@ if (isset($_POST['uploadForm'])) {
 	$result = $stmt->fetch();
 	
 	$pic = $result[0];
-	
-	
-	
 	}
 
 }
