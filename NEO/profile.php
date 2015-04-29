@@ -94,4 +94,5 @@ if (isset($_POST['uploadForm'])) {
       </form>
     </div>
 </body>
+<?php require "footer.php";?>
 </html>

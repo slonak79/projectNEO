@@ -42,6 +42,7 @@
             <span class="sr-only">Next</span>
         </a>
     </div>
+<?php require "footer.php";?>
 </body>
 </html>
 

@@ -5,10 +5,6 @@
  * Date: 4/29/15
  * Time: 1:08 PM
  */
-//if (!isset($_SESSION['username']) || !isset($_SESSION['roles']) ||
-//    !isset($_SESSION['profile_picture'])) {
-//    header("Location: login.php");
-//}
 ?>
 <div class="container-fluid">
       <div class="row row-offcanvas row-offcanvas-left">
@@ -43,10 +39,7 @@
             <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas"><i class="glyphicon glyphicon-chevron-left"></i></button>
           </p>
 
-		  <h1 class="page-header">
-Dashboard
-            <p class="lead">(<a href="http://www.bootply.com/128936">with off-canvas sidebar</a>)</p>
-          </h1>
+		  <h1 class="page-header">Administrator Dashboard</h1>
 
           <div class="row placeholders">
             <div class="col-xs-6 col-sm-3 placeholder text-center">
@@ -73,7 +66,7 @@ Dashboard
 
           <hr>
 
-          <h2 class="sub-header">Section title</h2>
+          <h2 class="sub-header">Evacuee's in Transit</h2>
           <div class="table-responsive">
             <table class="table table-striped">
               <thead>
