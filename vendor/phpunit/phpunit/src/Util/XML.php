@@ -310,7 +310,7 @@ class PHPUnit_Util_XML
     }
 
     /**
-     * Parse a CSS selector into an associative array suitable for
+     * Parse a css selector into an associative array suitable for
      * use with findNodes().
      *
      * @param  string $selector
@@ -435,7 +435,7 @@ class PHPUnit_Util_XML
 
     /**
      * Parse an $actual document and return an array of DOMNodes
-     * matching the CSS $selector.  If an error occurs, it will
+     * matching the css $selector.  If an error occurs, it will
      * return false.
      *
      * To only return nodes containing a certain content, give

@@ -1,6 +1,6 @@
 <?php
 
-require '../includes/hackathon/dbConnection.php';
+require 'mysqlConfig.php';
 $dbConn = getConnection();
 
 
@@ -55,13 +55,7 @@ if (isset($_POST['uploadForm'])) {
     if (!file_exists($path) ) { //checks whether user's folder exists 
        mkdir($path);
     }
-
-    move_uploaded_file($_FILES['fileName']['tmp_name'], $path . '/' .  $_FILES['fileName']['name'] );    
-    
-   //update database with the name of the file for the profile picture
-   
-   	
-   
+    move_uploaded_file($_FILES['fileName']['tmp_name'], $path . '/' .  $_FILES['fileName']['name'] );
   	$sql = "UPDATE lab7_user SET profilePicture = :profilePicture WHERE username = :username";
 
 	$namedParameters = array();
@@ -88,9 +82,6 @@ if (isset($_POST['uploadForm'])) {
 	
 	
 	}
-	
-	
-	
 
 }
 
@@ -130,37 +121,19 @@ if (isset($_POST['uploadForm'])) {
 	Hello <?=$_SESSION['username']?>
 	
 </h2>
-      
-      
       <br />
-      
        <?php
-      
        if (empty($_SESSION['profilePicture'])){
-           
          echo "<img id='profile' src='img/unknown.jpg' alt='Unknown user' >";
-	
        } else {
-           
           echo "<img id='profile' src='img/" . $user . "/" . $pic . "'>";
        }
-      
-      
       ?>
-      
-      <form method="post" enctype="multipart/form-data">
-          
+      <form method="post" enctype="multipart/form-data" action="updateProfile.php">
           Select image: <input type="file" name="fileName" /> <br />
           <input type="submit" name="uploadForm"/>
           <br />
-      
-          
       </form>
-
-
-     
-
-      
     </div>
 
   </div>

@@ -1126,7 +1126,7 @@ Holder.js - client side image placeholders
 	 *
 	 * @private
 	 * @param svg SVG context
-	 * @param stylesheets CSS stylesheets to include
+	 * @param stylesheets css stylesheets to include
 	 */
 	function serializeSVG(svg, renderSettings) {
 		if (!global.XMLSerializer) return;
@@ -1212,9 +1212,9 @@ Holder.js - client side image placeholders
 	}
 
 	/**
-	 * Takes a k/v list of CSS properties and returns a rule
+	 * Takes a k/v list of css properties and returns a rule
 	 *
-	 * @param props CSS properties object
+	 * @param props css properties object
 	 */
 	function cssProps(props) {
 		var ret = [];
