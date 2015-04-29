@@ -32,3 +32,8 @@ legend.scheduler-border {
     border-bottom:none;
 }
 
+.carousel-inner > .item > img {
+    margin: 0 auto;
+    width: 700px;
+}
+
