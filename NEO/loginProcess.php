@@ -21,7 +21,7 @@ if (isset($_POST['loginForm'])) {
     $result = $stmt->fetch(); 
      
     if (empty($result)) { 
-        header("Location: login.html?error='wrong username'"); 
+        header("Location: login.php?error='wrong username'");
     } else { 
          
         $_SESSION["username"] = $result["username"]; 
