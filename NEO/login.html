@@ -18,32 +18,26 @@
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 </head>
 
+
 <body>
   <div>
     <header>
       <h1>login</h1>
       <link href ="css/styles.css" rel="stylesheet" />
     </header>
-   
+   <div>
 
-    <div>
-      <fieldset id = "login">
-          <legend>Login</legend>          
-          
-          Username: <input type="text" name="username" id="username"/> <span id="usernameError"></span><br /><br />
-          
-          Password: <input type="text" name="password" id="password"/> <span id="passwordError"></span><br /><br />
-          
-          <input type="submit" value="Submit" /> <br /><br />
-          
-          
-          <a href="signup.html"target="blank">New Evaccuee</a>
-      </fieldset>
+    <h1> Login Form</h1>
+    
+    <form action="loginProcess.php" method="post">
+        Username: <input type="text" name="username"> <br /><br />
+        Password: <input type="password" name="password"> <br /><br />
+        <input type="submit" name="loginForm"/>
+    </form>
+
+      
     </div>
 
-    <footer>
-     <p>&copy; Copyright  by ProjectNEO</p>
-    </footer>
   </div>
 </body>
 </html>
