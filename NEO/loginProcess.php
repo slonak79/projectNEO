@@ -28,10 +28,6 @@ if (isset($_POST['loginForm'])) {
         $_SESSION["profilePicture"] = $result["profilePicture"]; 
         header("Location: profile.php"); 
          
-    } 
-     
-     
-} 
-
-
+    }
+}
 ?>
