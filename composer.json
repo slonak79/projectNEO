@@ -6,11 +6,24 @@
     {
       "name": "Alcides Sorto",
       "email": "asorto@csumb.edu"
+    },
+    {
+      "name": "Edgar Sandoval",
+      "email": "hsandoval@csumb.edu"
+    },
+    {
+      "name": "Arturo Lopez",
+      "email": "arlopez@csumb.edu"
+    },
+    {
+      "name": "Devon Rusconi",
+      "email": "drusconi@csumb.edu"
     }
   ],
   "autoload":{
     "psr-4":{
-      "projectNEO\\":"NEO"
+      "projectNEO\\":"NEO",
+      "projectNEO\\":"test"
     }
   },
   "require-dev":{
