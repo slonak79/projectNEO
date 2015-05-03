@@ -14,7 +14,7 @@
         <testsuites>
             <testsuite name="money test">
                 <directory suffix="MoneyTest.php">./projectNEO/test/</directory>
-                <file>./projectNEO/test/MoneyTest.php</file>
+                <file>MoneyTest.php</file>
             </testsuite>
         </testsuites>
     </phpunit>

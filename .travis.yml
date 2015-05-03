@@ -14,6 +14,9 @@ before_script:
 notifications:
   email:
     recipients:
-      - alsorto@gmail.com
+      - asorto@csumb.edu
+      - hsandoval@csumb.edu
+      - arlopez@csumb.edu
+      - drusconi@csumb.edu
     on_success: change
     on_failure: always
