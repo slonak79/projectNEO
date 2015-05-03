@@ -1257,9 +1257,9 @@ function assertSameSize($expected, $actual, $message = '')
 
 /**
  * Assert the presence, absence, or count of elements in a document matching
- * the css $selector, regardless of the contents of those elements.
+ * the CSS $selector, regardless of the contents of those elements.
  *
- * The first argument, $selector, is the css selector used to match
+ * The first argument, $selector, is the CSS selector used to match
  * the elements in the $actual document.
  *
  * The second argument, $count, can be either boolean or numeric.
