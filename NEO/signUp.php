@@ -6,7 +6,6 @@
  * Date: 4/29/15
  * Time: 12:09 PM
  */
-
 require 'mysqlConfig.php';
 $dbConn = getConnection();
 
@@ -33,8 +32,10 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
         echo "<h1>The evacuee information was successfully stored!</h1>";
 
-    }else{
+    }else {
         echo "not set";
     }
+
+
 }
 ?>
