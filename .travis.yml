@@ -7,11 +7,15 @@ php:
   - nightly
 
 before_script:
+    - composer self-update
     - composer install
     - wget https://phar.phpunit.de/phpunit.phar
     - wget http://getcomposer.org/composer.phar
     - php composer.phar install
-    - phpunit
+
+script: phpunit
+
+
 
 notifications:
   email:
@@ -20,5 +24,5 @@ notifications:
       - hsandoval@csumb.edu
       - arlopez@csumb.edu
       - drusconi@csumb.edu
-    on_success: change
+    on_success: always
     on_failure: always
