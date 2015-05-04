@@ -5,7 +5,6 @@
 <body>
     <?php require "navbar.php"; ?>
 
-
     <div class="container-fluid">
 
         <div class="row row-offcanvas row-offcanvas-left">
@@ -28,15 +27,32 @@
 
                        <label>Authority:</label> <input type = "text" name = "authority" required><br/>
 
+                        <h3>User Information</h3>
+
+                        <label for="username">Username:</label> <input type="text" name="username" id="username"required><br>
+                        <label for="password">Password:</label> <input type="password" name="password" id="password" required><br>
+                        <label for="email">Email:</label>  <input type="text" name="email" id="email" required><br>
+                        <label for="phone_number">Phone Number: </label><input type="tel" name="phone_number" id="phone_number" required><br>
+                        <label for="profile_picture">Profile Picture: </label><input type="file" name="profile_picture" id="profile_picture" required/> <br>
+
                         <button type="submit" class="btn btn-success">
                             <i class="icon-circle-arrow-right icon-large"></i> Submit
                         </button>
 
                     </fieldset>
                 </form>
+
+
             </div>
         </div>
     </div>
+
+
+
+
+
+
+
 </body>
 <?php require "footer.php";?>
 </html>

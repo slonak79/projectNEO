@@ -8,12 +8,14 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         $dbConn = getConnection();
 
         $sql = "SELECT u.username, u.profile_picture, u.user_id, ur.role_id, r.role_function FROM users
-            as u inner join user_roles as ur on u.user_id = ur.user_id
-            inner join roles as r on r.role_id = ur.role_id
+              as u inner join user_roles as ur on u.user_id = ur.user_id
+                 inner join roles as r on r.role_id = ur.role_id
             where u.username=:username and u.password=:password GROUP BY u.user_id";
+        //$sql = "SELECT `username`, `password` FROM `users` WHERE username = :username AND password = :password";
 
         $username  = $_POST['username'];
-        $password = hash('sha256', $_POST['password']);
+        //$password = hash('sha256', $_POST['password']);
+        $password = $_POST['password'];
 
 //        echo $username."<br>";
 //        echo $password."<br>";

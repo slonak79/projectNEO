@@ -5,7 +5,6 @@
  * Date: 4/29/15
  * Time: 5:42 PM
  */
-
 if(isset($_GET['action'])){
     require "mysqlConfig.php";
     if($_GET['action'] == "roles"){
@@ -18,14 +17,12 @@ if(isset($_GET['action'])){
         echo $records;
     }
 }
-
 function getEvacTables(){
     $dbconn = getConnection();
     $sql = "select evacuee_id, given_name, surname, date_of_birth, sex from evacuee;";
     $stmt = $dbconn->prepare($sql);
     $stmt->execute();
     $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
-
     foreach ($result as $record){
         $evacueeId = $record['evacuee_id'];
         $givenName = $record['given_name'];
