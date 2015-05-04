@@ -22,5 +22,5 @@ notifications:
       - hsandoval@csumb.edu
       - arlopez@csumb.edu
       - drusconi@csumb.edu
-    on_success: always
+    on_success: never
     on_failure: always
