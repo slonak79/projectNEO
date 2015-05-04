@@ -5,6 +5,13 @@
  * Date: 4/29/15
  * Time: 1:08 PM
  */
+
+/* when we finish implementing the php page
+if(!isset($_SESSION['username'])){
+    header("Location: login.html");
+}
+*/
+
 require "adminFunctions.php";
 ?>
 <div class="container-fluid">

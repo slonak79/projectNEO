@@ -31,7 +31,6 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             $_SESSION["profile_picture"] = $result["profile_picture"];
             $_SESSION['roles'] = $result['role_function'];
             header("Location: profile.php");
-
         }
     }
      
