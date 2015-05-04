@@ -24,6 +24,7 @@
                     <div class="form-group">
                         <label for="username" class="control-label">Username:</label>
                         <input type="text" name="username" id="username"required>
+                        <br><span id="usernameError"></span>
                     </div>
                     <div class="form-group">
                         <label for="password" class="control-label">Password:</label>
@@ -44,6 +45,7 @@
                     <div class="form-group">
                         <label for="phone_number" class="control-label">Phone Number: </label>
                         <input type="tel" name="phone_number" id="phone_number" required>
+                        <br><span id = "phone_numberError"></span>
                     </div>
                     <div class="form-group">
                         <label for="profile_picture" class="control-label">Profile Picture: </label>
@@ -70,4 +72,5 @@
 </body>
 <?php require "footer.php";?>
 <script type="text/javascript" src="js/loadRoles.js"></script>
+<script type="text/javascript" src="js/evacueeFunctions.js"></script>
 </html>
