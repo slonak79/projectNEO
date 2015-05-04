@@ -57,7 +57,7 @@ require "adminFunctions.php";
             <table class="table table-striped">
               <thead>
                 <tr>
-                  <th>#</th>
+                  <th>ID#</th>
                   <th>Given Name</th>
                   <th>Surname</th>
                   <th>Date of Birth</th>
