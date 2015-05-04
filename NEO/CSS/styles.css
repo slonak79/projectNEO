@@ -36,4 +36,7 @@ legend.scheduler-border {
     margin: 0 auto;
     width: 700px;
 }
+select  {
+    width: 100px;
+}
 
