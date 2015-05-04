@@ -1,6 +1,6 @@
 
 /********************
- * HTML css
+ * HTML CSS
  */
 
 
@@ -24,7 +24,7 @@
 }
 
 /********************
- * TOOLTIP css
+ * TOOLTIP CSS
  */
 
 .nvtooltip {
@@ -139,7 +139,7 @@
 
 
 /********************
- * SVG css
+ * SVG CSS
  */
 
 
@@ -689,7 +689,7 @@ svg .title {
 
 
 /**
- * TODO: the following 3 selectors are based on classes used in the example.  I should either make them standard and leave them here, or move to a css file not included in the library
+ * TODO: the following 3 selectors are based on classes used in the example.  I should either make them standard and leave them here, or move to a CSS file not included in the library
  */
 .nvd3.nv-indentedtree .name {
   margin-left: 5px;
