@@ -2,6 +2,60 @@
 <html>
 <?php require "header.php"; ?>
 
+<script>
+    function displayError(id,message){
+        $(id + "Error").html(message);
+        $(id).css("background-color","red");
+        $(id).focus();
+        $(id + "Error").css("color", "red");
+    }
+
+    function checkUsername(){
+        if($("#username").val().length < 4){
+            displayError("#username", "Username needs to be atleast 4 characters!");
+            return false;
+        }
+        if($("#username").val().length > 3){
+            $("#username").css("background-color","white");
+            $("#usernameError").html("");
+        }
+
+        $.ajax({
+            type: "get",
+            url: "verifyUserName.php",
+            dataType: "json",
+            data: {"username": $("#username").val() },
+            success: function(data,status) {
+                alert(data['exists']);
+                if(data['exists']) {
+                    displayError("#username","Username already taken!!" );
+                }
+                else{
+                    $("#usernameError").html("Username available");
+                    $("#usernameError").css("color", "green");
+                }
+            },
+            complete: function(data,status) { //optional, used for debugging purposes
+                alert(status);
+
+
+            }
+        });
+    }
+
+    function checkPhoneNumber(){
+        if(!/^\(\d{3}\)\s*\d{3}-\d{4}$/.test($("#phone_number").val())){
+            displayError("#phone_number","Correct Format: (###)###-####");
+            return false;
+        }
+        if(/^\(\d{3}\)\s*\d{3}-\d{4}$/.test($("#phone_number").val())) {
+            $("#phone_number").css("background-color", "white");
+            $("#phone_numberError").html("");
+        }
+    }
+
+</script>
+
 <body>
     <?php require "navbar.php"; ?>
 
@@ -29,10 +83,10 @@
 
                         <h3>User Information</h3>
 
-                        <label for="username">Username:</label> <input type="text" name="username" id="username"required><br>
+                        <label for="username">Username:</label> <input type="text" name="username" id="username" required><br><span id="usernameError"></span><br/>
                         <label for="password">Password:</label> <input type="password" name="password" id="password" required><br>
                         <label for="email">Email:</label>  <input type="text" name="email" id="email" required><br>
-                        <label for="phone_number">Phone Number: </label><input type="tel" name="phone_number" id="phone_number" required><br>
+                        <label for="phone_number">Phone Number: </label><input type="tel" name="phone_number" id="phone_number" required><span id = "phone_numberError"></span><br><br>
                         <label for="profile_picture">Profile Picture: </label><input type="file" name="profile_picture" id="profile_picture" required/> <br>
 
                         <button type="submit" class="btn btn-success">
@@ -46,6 +100,14 @@
             </div>
         </div>
     </div>
+
+    <script>
+
+        $("#username").change(checkUsername);
+        //$("#password").change(checkPassword);
+        $("#phone_number").change(checkPhoneNumber);
+
+    </script>
 
 
 
