@@ -16,6 +16,7 @@ if(isset($_GET['action'])){
         $records = json_encode($result);
         echo $records;
     }
+
 }
 function getEvacTables(){
     $dbconn = getConnection();
@@ -30,5 +31,22 @@ function getEvacTables(){
         $dateOfBirth = $record['date_of_birth'];
         $sex = $record['sex'];
         echo "<tr><td>$evacueeId</td><td>$givenName</td><td>$surname</td><td>$dateOfBirth</td><td>$sex</td></tr>";
+    }
+}
+
+function getLatLong(){
+    $dbConn2 = getConnection();
+    $sql = "SELECT `ID`,`latitude`, `longitude` FROM `airports`";
+    $stmt = $dbConn2->prepare($sql);
+    $stmt->execute();
+    $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    return $result;
+
+    foreach ($result as $record){
+        $airportId = $record['ID'];
+        $latitude = $record['latitude'];
+        $longitude= $record['longitude'];
+
+        echo "<tr><td>$airportId</td><td>$latitude/td><td>$longitude</td></tr>";
     }
 }

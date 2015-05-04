@@ -16,7 +16,7 @@ if(!isset($_SESSION['username'])){
         body{
             background-color: #74AFAD;
         }
-        div#googleMap { border-radius: 15px; margin: 0 auto 0 auto; }
+        div#googleMap {border-radius: 15px; margin: 0 auto 0 auto; }
         
          table,tr,td{    
             border: 2px solid black;
@@ -37,7 +37,8 @@ if(!isset($_SESSION['username'])){
     <h1 style = "text-align:center;">Deployment Map</h1>
 <div id="googleMap" style="width:700px;height:380px;border:4px solid black;"></div>
     <br>
-    
+
+
     
     <table  style = " border-radius: 25px;" align = "center"  >
         <tr><td colspan="2" style = "text-align:center;">Transportation Information</td></tr>
@@ -52,3 +53,5 @@ if(!isset($_SESSION['username'])){
     </table>
 </body>
 </html>
+
+<script type="text/javascript" src="js/map.js"></script>

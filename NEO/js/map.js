@@ -1,6 +1,8 @@
 /**
  * Created by edsan on 5/4/15.
  */
+
+
 var deployment = new google.maps.LatLng(36.6778, -121.6556);
 var arrival = new google.maps.LatLng(23.1333, -82.3833);
 
