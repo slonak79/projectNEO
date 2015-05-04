@@ -9,8 +9,6 @@ php:
 before_script:
     - composer self-update
     - composer install
-    - wget https://phar.phpunit.de/phpunit.phar
-    - wget http://getcomposer.org/composer.phar
     - php composer.phar install
 
 script: phpunit

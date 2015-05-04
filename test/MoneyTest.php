@@ -1,6 +1,7 @@
 <?php
 
 require_once __DIR__ . '/vendor/autoload.php';
+//require_once __DIR__ . 'NEO/Money.php';
 
 class MoneyTest extends PHPUnit_Framework_TestCase
 {
