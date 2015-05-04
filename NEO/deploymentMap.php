@@ -35,7 +35,7 @@ if(!isset($_SESSION['username'])){
 
 <body>
     <h1 style = "text-align:center;">Deployment Map</h1>
-<div id="googleMap" style="width:700px;height:380px;border:4px solid black;"></div>
+
     <br>
     
     

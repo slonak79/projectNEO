@@ -71,11 +71,10 @@ require "adminFunctions.php";
               </tbody>
             </table>
           </div>
-
-
       </div><!--/row-->
 	</div>
 </div><!--/.container-->
+
 
 <footer>
   <p class="pull-right">©2015 NEO</p>
