@@ -1,3 +1,13 @@
+<?php
+
+/* when we finish implementing the php page
+if(!isset($_SESSION['username'])){
+    header("Location: login.html");
+}
+*/
+
+?>
+
 <!DOCTYPE html>
 <html>
 <head>

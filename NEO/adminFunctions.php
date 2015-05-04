@@ -6,6 +6,19 @@
  * Time: 5:42 PM
  */
 
+if(isset($_GET['action'])){
+    require "mysqlConfig.php";
+    if($_GET['action'] == "roles"){
+        $dbconn = getConnection();
+        $sql = "select role_id, role_function from roles;";
+        $stmt = $dbconn->prepare($sql);
+        $stmt->execute();
+        $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        $records = json_encode($result);
+        echo $records;
+    }
+}
+
 function getEvacTables(){
     $dbconn = getConnection();
     $sql = "select evacuee_id, given_name, surname, date_of_birth, sex from evacuee;";
