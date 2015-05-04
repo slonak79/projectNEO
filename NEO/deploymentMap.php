@@ -39,11 +39,11 @@ function initialize()
     var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
 
     var marker=new google.maps.Marker({
-      position: deployment,
+      position: deployment
       });
     
     var arrivalMarker = new google.maps.Marker({
-        position: arrival,
+        position: arrival
     });
 
     marker.setMap(map);

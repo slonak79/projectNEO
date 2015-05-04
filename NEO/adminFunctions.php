@@ -5,7 +5,7 @@
  * Date: 4/29/15
  * Time: 5:42 PM
  */
-
+require 'mysqlConfig.php';
 function getEvacTables(){
     $dbconn = getConnection();
     $sql = "select evacuee_id, given_name, surname, date_of_birth, sex from evacuee;";
