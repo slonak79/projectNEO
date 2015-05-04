@@ -22,7 +22,8 @@
   ],
   "autoload":{
     "psr-0":{
-      "NEO\\":"NEO/"
+      "projectNEO\\":"NEO/Money.php",
+      "projectNEO\\":"test/MoneyTest.php"
       /**
 
       "projectNEO\\":"test"
