@@ -41,7 +41,7 @@ function checkUsername(){
 
 function checkPhoneNumber(){
     if(!/^\(\d{3}\)\s*\d{3}-\d{4}$/.test($("#phone_number").val())){
-        displayError("#phone_number","Correct Format: (###)###-####");
+        displayError("#phone_number","Incorrect Phone Number Format (###)###-####");
         return false;
     }
     if(/^\(\d{3}\)\s*\d{3}-\d{4}$/.test($("#phone_number").val())) {
