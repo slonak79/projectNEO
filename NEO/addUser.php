@@ -69,4 +69,5 @@
 </div>
 </body>
 <?php require "footer.php";?>
+<script type="text/javascript" src="js/loadRoles.js"></script>
 </html>

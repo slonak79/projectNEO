@@ -11,8 +11,8 @@ $.ajax({
     success: function (json) {
         $.each($.parseJSON(json),function(key, value){
             $("#roles_select").append($("<option></option>")
-                .attr("value",key)
-                .text(value));
+                .attr("value",value.role_id)
+                .text(value.role_function));
         });
     },
     error: function (xhr, status, errorThrown) {
