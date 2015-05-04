@@ -16,7 +16,6 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         $username  = $_POST['username'];
         $password = hash('sha256', $_POST['password']);
 
-
 //        echo $username."<br>";
 //        echo $password."<br>";
 

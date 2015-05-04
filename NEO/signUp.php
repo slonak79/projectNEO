@@ -36,7 +36,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
         $userNamedParameters = array();
         $userNamedParameters[":username"] = $_POST['username'];
-        $userNamedParameters[":password"]  = $_POST['password'];
+        $userNamedParameters[":password"]  = hash("sha256",$_POST['password']);
         $userNamedParameters[":email"] = $_POST["email"];
         $userNamedParameters[":first_name"]       = $_POST['givenName'];
         $userNamedParameters[":last_name"]    = $_POST['surname'];
