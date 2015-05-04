@@ -14,8 +14,8 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         //$sql = "SELECT `username`, `password` FROM `users` WHERE username = :username AND password = :password";
 
         $username  = $_POST['username'];
-        //$password = hash('sha256', $_POST['password']);
-        $password = $_POST['password'];
+        $password = hash('sha256', $_POST['password']);
+
 
 //        echo $username."<br>";
 //        echo $password."<br>";
@@ -30,7 +30,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         } else {
 
             $_SESSION["username"] = $result["username"];
-            $_SESSION["profile_picture"] = $result["profile_picture"];
+            $_SESSION["profile_picture"] = "ffd";
             $_SESSION['roles'] = $result['role_function'];
             header("Location: profile.php");
         }
