@@ -1,22 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<phpunit bootstrap="./vendor/autoload.php"
+<phpunit bootstrap="vendor/autoload.php"
 
-        color="true"
-        convertErrorsToExceptions="true"
-        convertNoticesToExceptions="true"
-        convertWarningsToExceptions="true"
-        stopOnFailure="false"
-        syntaxCheck="false"
+         colors="true"
+         convertErrorsToExecptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         processIsolation="false"
+         stopFailure="false"
+         syntaxFailure="false"
+         syntaxCheck="false"
 
         >
 
 
-        <testsuites>
-            <testsuite name="money test">
-                <directory suffix=".php">./projectNEO/test/MoneyTest</directory>
-                
-            </testsuite>
-        </testsuites>
-    </phpunit>
+    <testsuites>
+        <testsuite name="All Tests">
+            <directory>tests</directory>
+        </testsuite>
+    </testsuites>
+
+
+</phpunit>
 
 
